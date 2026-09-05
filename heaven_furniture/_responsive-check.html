@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Responsive Check</title>
+<style>
+  body { margin: 0; background: #333; font-family: sans-serif; color: #eee; overflow-x: auto; }
+  .bar { position: sticky; top: 0; z-index: 10; background: #111; padding: 8px 16px; font-size: 12px; }
+  .wrap { width: 360px; }
+  .wrap.b768 { width: 768px; }
+  .wrap.b1280 { width: 1280px; }
+  iframe { display: block; width: 100%; height: 750px; border: 0; background: #fff; }
+  .note { padding: 4px 16px 10px; font-size: 11px; color: #aaa; }
+</style>
+</head>
+<body>
+  <div class="bar">MOBILE 360px</div>
+  <div class="wrap"><iframe src="index.html"></iframe></div>
+  <div class="bar">TABLET 768px</div>
+  <div class="wrap b768"><iframe src="index.html"></iframe></div>
+  <div class="bar">DESKTOP 1280px</div>
+  <div class="wrap b1280"><iframe src="index.html"></iframe></div>
+</body>
+</html>
